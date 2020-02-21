@@ -1,5 +1,5 @@
 nav {
-	background-color: #54555e8e;
+	background-color: #bdbec78e;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -35,7 +35,7 @@ nav {
 		line-height: 40px;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #fff;
-		background: #00283c;
+		background: #4b565c;
 		text-decoration: none;
 	}
 	/*Hover state for top level links*/
@@ -50,7 +50,7 @@ nav {
 	/*Style for dropdown links*/
 	li:hover ul a {
 		background: #f3f3f3;
-		color: #00283c;
+		color: #333c41;
 		height: 40px;
 		line-height: 40px;
 	}
@@ -83,7 +83,7 @@ nav {
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		text-decoration: none;
 		color: #fff;
-		background: #00283c;
+		background: #3e4346;
 		text-align: center;
 		padding: 10px 0;
 		display: none;
