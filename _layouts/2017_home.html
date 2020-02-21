@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  {% include 2016_data/head.html %}
+
+    <body id="page-top" class="index">
+
+    {% include 2017_data/header-home.html %}
+
+    <!-- Header -->
+    <header id="vantajs">
+        <div class="container" >
+            <div class="intro-text">
+                <div class="intro-heading" style="color: rgba(41, 40, 40, 0.212); margin-right: auto; -webkit-text-stroke: 3px; -webkit-text-stroke-color: snow; text-shadow: black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">University of Manitoba CultureX 2020<br /></div>
+                <div class="intro-lead-in">March 20-22 2020</div>
+                <!-- <div class="intro-lead-in">Fort Garry Canad Inns</div> -->
+                <div class="intro-lead-in">More Info Soon!</div>
+                <a href="#intro" class="page-scroll btn btn-xl">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- #### VANTA JS PLUGIN ### -->
+<!-- A. vanta js assets -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+<!-- <script src="https://www.vantajs.com/dist/vanta.rings.min.js"></script> -->
+<!-- <script src="https://www.vantajs.com/dist/vanta.net.min.js"></script> -->
+<script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
+<!-- B. Instilize vanta js by #id selector -->
+<!-- <script>  -->
+<!-- //    VANTA.RINGS({
+//     el:"#vantajs",
+//     backgroundColor: 0x111111
+//    })
+
+// VANTA.NET({
+//   el: "#vantajs",
+//   points: 15.00,
+//   maxDistance: 21.00
+// }) -->
+
+<!-- <script src="three.r92.min.js"></script> -->
+<!-- <script src="vanta.waves.min.js"></script> -->
+<script>
+VANTA.BIRDS({
+  el: "#vantajs",
+  mouseControls: true,
+  touchControls: true,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0x1c324c,
+  // color1: 0xffeb,
+  // color2: 0x1cc1e5,
+  birdSize: 1.20,
+  wingSpan: 24.00,
+  speedLimit: 6.00,
+  separation: 77.00,
+  alignment: 51.00,
+  cohesion: 1.00,
+  quantity: 4.00
+})
+</script>
+<!-- </script> -->
+
+{% include 2017_data/intro.html %}
+<!-- {% include 2017_data/about.html %} -->
+<!-- speakers also contains some information from about -->
+<!-- {% include 2017_data/speakers.html %} -->
+<!-- {% include 2017_data/sponsors.html %} -->
+<!-- {% include 2016_data/contact.html %} -->
+{% include 2016_data/footer.html %}
+<!-- {% include 2017_data/speakers_info.html %} -->
+{% include 2016_data/js.html %}
+    </body>
+</html>
