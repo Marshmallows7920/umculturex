@@ -1,5 +1,5 @@
 nav {
-	background-color: #bdbec78e;
+	background-color: #4454e48e;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -35,7 +35,7 @@ nav {
 		line-height: 40px;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #fff;
-		background: #4b565c;
+		background: #1cd41c;
 		text-decoration: none;
 	}
 	/*Hover state for top level links*/
@@ -83,7 +83,7 @@ nav {
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		text-decoration: none;
 		color: #fff;
-		background: #3e4346;
+		background: #90967b;
 		text-align: center;
 		padding: 10px 0;
 		display: none;
@@ -105,18 +105,22 @@ nav {
 		ul {
 			position: static;
 			display: none;
+			color: white; //addition
 		}
 		/*Create vertical spacing*/
 		li {
 			margin-bottom: 0px;
+			background-color: white; //addition
 		}
 		/*Make all menu links full width*/
 		ul li, li a {
 			width: 100%;
+			background-color: white; //addition
 		}
 		/*Display 'show menu' link*/
 		.show-menu {
 			display: block;
+			background-color: white; //addition
 		}
 	}
 	/*show the center logo */
