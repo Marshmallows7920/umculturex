@@ -10,7 +10,24 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+ .countdown {
+    display: inline-block;
+    font-size: 1em;
+    list-style-type: none;
+    padding: 0.75em;
+    text-transform: uppercase;
+    flex:auto;
+      text-align: center !important;
+      font-family: Oswald, "Helvetica Neue",Helvetica,Arial,sans-serif;
+  
+  }
+  
+  li span {
+    display: block;
+    font-size: 2.5rem;
+   }
+  
+  
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -32,7 +49,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #00283c;
+    color: #083d63;
 }
 
 @media screen and (max-width : 1200px){
@@ -342,11 +359,11 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
-    height: 100vh;
+    /* height: 100vh; */ /*causes overflow*/
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('/css/2016_style/img/header-bg.jpg');
+    /* background-image: url('/css/2016_style/img/header-bg.jpg'); */
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -393,24 +410,26 @@ header .intro-text .intro-heading {
        /* font-style: italic;*/
         line-height: 40px;
         color:white;
-        text-align: left;
-        margin-left: 75px;
+        /* text-align: left; this centers the text
+        margin-left: 75px; */
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 0px;
         text-transform: uppercase;
         font-family: Oswald, "Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 85px;
         font-weight: 100;
         line-height: 75px; /* There were problems here so i changed the numbers */
         color:white;
-        margin-right: 300px;
+        margin-right: 0px; /* changed to 0 so its centered*/
+        margin-top: 0px;
     }
 }
 
 section {
-    padding: 100px 0;
+    padding-top: 30px;
+    padding-bottom: 0px 0;
 }
 
 aside.clients h2,
@@ -431,7 +450,8 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding-top: 100px;
+        padding-bottom: 0px;
     }
 }
 
