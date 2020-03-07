@@ -55,7 +55,7 @@ let countDown = new Date('Mar 20, 2020 00:00:00').getTime(),
     //do something later when date is reached
     //if (distance < 0) {
     //  clearInterval(x);
-    //  'IT'S MY BIRTHDAY!;
+    //  'IT'S Time!;
     //}
 
   }, second)
@@ -103,11 +103,16 @@ VANTA.BIRDS({
 {% include 2017_data/intro.html %}
 {% include 2017_data/about.html %}
 <!-- speakers also contains some information from about -->
-<!-- {% include 2017_data/speakers.html %} -->
-<!-- {% include 2017_data/sponsors.html %} -->
-<!-- {% include 2016_data/contact.html %} -->
+
+<!-- ok for some reason html pulls in code from commented out files ._. -->
+<!-- % include 2017_data/speakers.html %} -->
+<!-- % include 2017_data/sponsors.html %} -->
+<!-- % include 2016_data/contact.html %} -->
+
+{% include 2017_data/contact.html %}
+<br /><br /><br /><br /><br /><br /><br />
 {% include 2016_data/footer.html %}
-<!-- {% include 2017_data/speakers_info.html %} -->
+<!-- % include 2017_data/speakers_info.html %} -->
 {% include 2016_data/js.html %}
     </body>
 </html>

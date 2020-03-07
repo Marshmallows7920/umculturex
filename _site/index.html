@@ -86,9 +86,9 @@
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <!-- <li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
         </div>
@@ -143,7 +143,7 @@ let countDown = new Date('Mar 20, 2020 00:00:00').getTime(),
     //do something later when date is reached
     //if (distance < 0) {
     //  clearInterval(x);
-    //  'IT'S MY BIRTHDAY!;
+    //  'IT'S Time!;
     //}
 
   }, second)
@@ -189,6 +189,8 @@ VANTA.BIRDS({
 </script>
 <!-- </script> -->
     <section id="intro">
+        <center><h1> Early bird tickets are now available for $15!</h1></center>
+
         <div class="container">
             <div class="row">
                 <!-- <center><a href="https://www.instagram.com/umculturex/" class="page-scroll btn btn-xl">Follow us on Instagram</a></center>
@@ -203,7 +205,7 @@ VANTA.BIRDS({
                     <!-- <br /> -->
                     <!-- <a href="https://forms.gle/fh6FJRX4UKYaNnRUA" class="page-scroll btn btn-xl">Register as a Student Performer</a> -->
                     <br />    
-                    <h2 class="section-heading">An Intercultural celebration</h2>
+                    <h4 class="section-heading">An Intercultural celebration</h4>
                 </div>
             </div>
             <div class="row container">
@@ -261,8 +263,9 @@ VANTA.BIRDS({
                     <!-- <img src="about_white-1.jpg" alt="Image of all the clubs helping bring CultureX together" width="100%"> -->
                     <img src="about.png" alt="Image of all the clubs helping bring CultureX together" width="100%">
                     <!-- <embed src="about_white.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0" type="application/pdf" width="100%" height="600px" /> -->
-                    <h3 class="section-subheading text-muted"></h3>
+                    <h3 class="section-subheading text-muted">Reach out to any of the student groups to get tickets!</h3>
                 <!-- </div> -->
+
             </div>
             <!-- <div class="row"> -->
                 <!-- <div class="col-lg-12"> -->
@@ -344,168 +347,56 @@ Ambassador Room F
         <!-- </div> -->
     </section>
 <!-- speakers also contains some information from about -->
-<!--  <section id="speakers" class="bg-light-gray">
+
+<!-- ok for some reason html pulls in code from commented out files ._. -->
+<!-- % include 2017_data/speakers.html %} -->
+<!-- % include 2017_data/sponsors.html %} -->
+<!-- % include 2016_data/contact.html %} -->
+
+<section id="contact">
         <div class="container">
-
-            <div class="row container">
-                <style>
-                .pr1 {
-                align: middle;
-                font-size: x-large;
-                font-weight: 900;
-                margin-top: 2.5%;
-                margin-left: 20%;
-                margin-right: 20%;
-                }
-                </style>
-            </div>
-
-            <br />
-
-            <div class ="pr1">
-
-                <b>Who is it for?</b><br />
-                Students, Graduates, Alumni, and Professionals
-                <br /><br />
-                <b>Where is it?</b><br />
-                Fort Garry Canad Inns; 1824 Pembina Hwy, Winnipeg, MB
-                Ambassador Room F
-                <br /><br />
-                <b>When is it?</b><br />
-                Thursday, February 13, 2020<br />
-                5:30 pm - 9:30 pm
-                <br /><br />
-                Additional information<br />               
-                Dress Code: Business Professional            </div>
-
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Speakers</h2>
-                    <h3 class="section-subheading text-muted"></h3>
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">We will do our best to answer your request as soon as possible. You may send us your request via <a href="https://www.instagram.com/umculturex/">Instagram Direct Message</a></h3>
                 </div>
             </div>
             <div class="row">
-            
-                <div class="col-md-4 col-sm-6 speakers-item">
-                    <a href="#Name-1" class="speakers-link" data-toggle="modal">
-                        <div class="speakers-hover">
-                            <div class="speakers-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" action="https://formspree.io/xpzrnoal" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="control-group form-group">
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name."WW>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group form-group">
+                                    <input type="email" class="form-control" name="_replyto" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group form-group">
+                                    <input type="tel" class="form-control" name="phone" placeholder="Your Phone" id="phone">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="control-group form-group">
+                                    <textarea class="form-control" name="message" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" value="Send" class="btn " style="font-size: smaller;">Send Message</button><br /><br />
                             </div>
                         </div>
-                        <img src="css/2017_style/img/speaker/TBD.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="speakers-caption">
-                        <h4>Name</h4>
-                        <p class="text-muted">Position</p>
-                    </div>
-                </div>
-            
-                <div class="col-md-4 col-sm-6 speakers-item">
-                    <a href="#Name-2" class="speakers-link" data-toggle="modal">
-                        <div class="speakers-hover">
-                            <div class="speakers-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="css/2017_style/img/speaker/TBD.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="speakers-caption">
-                        <h4>Name</h4>
-                        <p class="text-muted">Position</p>
-                    </div>
-                </div>
-            
-                <div class="col-md-4 col-sm-6 speakers-item">
-                    <a href="#Name-3" class="speakers-link" data-toggle="modal">
-                        <div class="speakers-hover">
-                            <div class="speakers-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="css/2017_style/img/speaker/TBD.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="speakers-caption">
-                        <h4>Name</h4>
-                        <p class="text-muted">Position</p>
-                    </div>
-                </div>
-            
-            </div> -->
-        </div>
-    </section> -->
-<!--      <aside class="clients" class="bg-light-gray">
-        <div class="container">
-
-            <img src="css/2017_style/img/aspermisa_biztek2020_post2.png" class="img-responsive img-centered" alt="Sponsors">
-
-            <!-- <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Sponsors</h2>
+                    </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <a href="#" class="portfolio-link" data-toggle="modal">
-                        <img src="css/2017_style/img/logos/TBD.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#" class="portfolio-link" data-toggle="modal">
-                        <img src="css/2017_style/img/logos/TBD.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="#" class="portfolio-link" data-toggle="modal">
-                        <img src="css/2017_style/img/logos/TBD.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div> -->
         </div>
-    </aside> -->
-<!-- <section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contact Us</h2>
-                <h3 class="section-subheading text-muted">We will do our best to answer your request as soon as possible. You may send us your request via <a href="https://www.facebook.com/">Facebook Message</a></h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <form name="sentMessage" id="contactForm" action="https://formspree.io/hello.world@gmail.com" method="POST" novalidate>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="control-group form-group">
-                                <input type="text" class="form-control" name="name" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name."WW>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group form-group">
-                                <input type="email" class="form-control" name="_replyto" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group form-group">
-                                <input type="tel" class="form-control" name="phone" placeholder="Your Phone" id="phone" required data-validation-required-message="Please enter your phone number (optional).">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="control-group form-group">
-                                <textarea class="form-control" name="message" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 text-center">
-                            <div id="success"></div>
-                            <button type="submit" value="Send" class="btn btn-xl">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section> -->
+    </section>
+<br /><br /><br /><br /><br /><br /><br />
 <style>
 body {
   position: absolute;
@@ -540,83 +431,7 @@ footer {
         </div>
     </div>
 </footer>
-<!-- 
-    <div class="portfolio-modal modal fade" id="Name-1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Name</h2>
-                            <hr class="star-primary">
-                            <img src="css/2017_style/img/speaker/TBD.jpg" class="img-responsive img-centered" alt="Picture of TBD">
-                            <h3>Topic: Topic</h3>
-                            <p>More Info</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="Name-2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Name</h2>
-                            <hr class="star-primary">
-                            <img src="css/2017_style/img/speaker/TBD.jpg" class="img-responsive img-centered" alt="Picture of TBD">
-                            <h3>Topic: Topic</h3>
-                            <p>More Info</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="Name-3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Name</h2>
-                            <hr class="star-primary">
-                            <img src="css/2017_style/img/speaker/TBD.jpg" class="img-responsive img-centered" alt="Picture of TBD">
-                            <h3>Topic: Topic</h3>
-                            <p>More Info</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
- -->
+<!-- % include 2017_data/speakers_info.html %} -->
 <!-- jQuery Version 1.11.0 -->
 <script src="css/2016_style/js/jquery-1.11.0.js"></script>
 
