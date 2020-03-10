@@ -3,6 +3,39 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+
+/*FAQ page*/
+
+.faq-category {
+    width: fit-content !important;
+    padding: 2px;
+    border-bottom: solid white 1px;
+    font-weight: 900;
+    font-size: 2rem !important;
+}
+
+.faq-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.faq-section div {
+    width: 45%;
+    min-width: 250px;
+    margin-right: 5px;
+}
+
+.question {
+    color: #5CBFAE;
+    font-weight: bold;
+}
+
+.answer {
+    font-weight: 500;
+}
+
+
  .countdown {
     display: inline-block;
     font-size: 1em;
