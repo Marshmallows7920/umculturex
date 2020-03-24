@@ -14,7 +14,7 @@
             <div class="intro-text">
                 <div class="intro-heading" style="color: rgba(41, 40, 40, 0.212); margin-right: auto; -webkit-text-stroke: 3px; -webkit-text-stroke-color: snow; text-shadow: black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">University of Manitoba CultureX 2020<br /></div>
                 <!-- <div class="container"> -->
-                    <ul style="margin-right:auto;">
+                    <ul style="margin-right:auto;" id="timer">
                       <li class="countdown"><span id="days"></span>Days</li>
                       <li class="countdown"><span id="hours"></span>Hours</li>
                       <li class="countdown"><span id="minutes"></span>Minutes</li>
@@ -54,10 +54,10 @@ let countDown = new Date('Mar 20, 2020 00:00:00').getTime(),
       document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
     //do something later when date is reached
-    //if (distance < 0) {
-    //  clearInterval(x);
-    //  'IT'S Time!;
-    //}
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("timer").innerHTML = "Postponed";
+    }
 
   }, second)
   
